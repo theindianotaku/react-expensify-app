@@ -1,0 +1,31 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: $m-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif';
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-family: 'Open Sans';
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  font-family: 'Open Sans';
+}
