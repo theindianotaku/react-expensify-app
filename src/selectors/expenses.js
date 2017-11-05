@@ -1,4 +1,4 @@
-const setVisibleExpenses = (
+const getVisibleExpenses = (
   expenses,
   { text, sortBy, startDate, endDate}
 ) => {
@@ -16,9 +16,10 @@ const setVisibleExpenses = (
     } else if (sortBy === 'amount') {
       return a.amount < b.amount ? 1 : -1;
     }
+    return 0;
   });
 
   return sortedExpense;
 };
 
-export default setVisibleExpenses;
+export default getVisibleExpenses;
