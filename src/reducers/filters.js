@@ -1,8 +1,10 @@
+import moment from 'moment';
+
 const defaultState = {
   text: '',
   sortBy: 'date',
-  startDate: undefined,
-  endDate: undefined
+  startDate: moment().startOf('month'),
+  endDate: moment().endOf('month')
 };
 
 // state = state.filters
