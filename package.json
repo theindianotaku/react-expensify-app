@@ -31,8 +31,7 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "test": "jest --config=jest.config.json",
-    "prev-test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
@@ -44,6 +43,6 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "jest": {
-    "snapshotSerializers": "enzyme-to-json/serializer"
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
