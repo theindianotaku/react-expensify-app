@@ -9,7 +9,7 @@ import './styles/styles.css';
 //import registerServiceWorker from './registerServiceWorker';
 
 import { addExpense } from './actions/expenses';
-import getVisibleExpenses from './selectors/expenses';
+// import getVisibleExpenses from './selectors/expenses';
 
 const store = configureStore();
 
@@ -17,11 +17,11 @@ store.dispatch(addExpense({description: 'Water Bill', amount: 4500, createdAt: 2
 store.dispatch(addExpense({description: 'Gas Bill', amount: 1000, createdAt: 8000}));
 store.dispatch(addExpense({description: 'Rent', amount: 9000, createdAt: 5000}));
 
-const state = store.getState();
-
-const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-
-console.log(visibleExpenses);
+// const state = store.getState();
+//
+// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+//
+// console.log(visibleExpenses);
 
 const App = (
   <Provider store={ store }>
