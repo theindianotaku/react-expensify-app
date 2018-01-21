@@ -14,15 +14,9 @@ import { addExpense } from './actions/expenses';
 
 const store = configureStore();
 
-store.dispatch(addExpense({description: 'Water Bill', amount: 4500, createdAt: 2000}));
-store.dispatch(addExpense({description: 'Gas Bill', amount: 1000, createdAt: 8000}));
-store.dispatch(addExpense({description: 'Rent', amount: 9000, createdAt: 5000}));
-
-// const state = store.getState();
-//
-// const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-//
-// console.log(visibleExpenses);
+store.dispatch(addExpense({description: 'Water Bill', amount: 4500, createdAt: 1516546283047}));
+store.dispatch(addExpense({description: 'Gas Bill', amount: 1000, createdAt: 1516546283048}));
+store.dispatch(addExpense({description: 'Rent', amount: 9000, createdAt: 1516546283049}));
 
 const App = (
   <Provider store={ store }>
