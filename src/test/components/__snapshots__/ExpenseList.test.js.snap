@@ -13,7 +13,7 @@ exports[`should render ExpenseList with expenses prop 1`] = `
   <ExpenseListItem
     amount={1000}
     createdAt={0}
-    description="gum"
+    description="gum bills"
     id="1"
     key="1"
     note=""

@@ -7,7 +7,7 @@ exports[`should render ExpenseListItem correctly 1`] = `
     to="/edit/1"
   >
     <h3>
-      gum
+      gum bills
     </h3>
   </Link>
   <p>
