@@ -2,7 +2,6 @@
 
 exports[`should show 1 expense correctly 1`] = `
 <div>
-  ExpenseSummary
   <p>
     Viewing 
     <strong>
@@ -20,7 +19,6 @@ exports[`should show 1 expense correctly 1`] = `
 
 exports[`should show multiple expenses correctly 1`] = `
 <div>
-  ExpenseSummary
   <p>
     Viewing 
     <strong>

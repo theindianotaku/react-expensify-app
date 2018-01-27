@@ -10,7 +10,6 @@ export const ExpenseSummary = ({expenseCount, expensesTotal}) => {
 
   return (
     <div>
-      ExpenseSummary
       <p>Viewing <strong>{expenseCount}</strong> {expenseWord} totalling <strong>{formattedExpensesTotal}</strong></p>
     </div>
   );
