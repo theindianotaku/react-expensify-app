@@ -21,6 +21,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
     "uuid": "^3.1.0"
   },
   "scripts": {
@@ -46,7 +47,9 @@
     "eslint-plugin-react": "^7.4.0",
     "jest": "^20.0.4",
     "jest-cli": "^20.0.4",
-    "react-test-renderer": "^16.2.0"
+    "prettier-eslint": "^8.8.1",
+    "react-test-renderer": "^16.2.0",
+    "redux-mock-store": "^1.5.1"
   },
   "jest": {
     "snapshotSerializers": [

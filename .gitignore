@@ -12,15 +12,16 @@
 # production CSS files
 /src/styles/*.css
 
-#error logs
+# error logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-#npm lockfile
+# npm lockfile
 package-lock.json
 
 # misc
+.vscode
 .DS_Store
 .env.local
 .env.development.local
