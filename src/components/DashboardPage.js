@@ -4,7 +4,7 @@ import ExpenseList from './ExpenseList';
 import ExpenseListFilter from './ExpenseListFilter';
 import ExpenseSummary from './ExpenseSummary';
 
-class App extends Component {
+class DashboardPage extends Component {
   render() {
     return (
       <div>
@@ -16,4 +16,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default DashboardPage;
