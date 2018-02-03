@@ -1,4 +1,4 @@
-import { addExpense, editExpense, removeExpense } from '../../actions/expenses';
+import { addExpense, editExpense, removeExpense, setExpenses } from '../../actions/expenses';
 import expenses from '../fixtures/expenses';
 
 test('should setup addExpense action with provided values', () => {
@@ -24,5 +24,14 @@ test('should set up removeExpense action', () => {
   expect(action).toEqual({
     type: 'REMOVE_EXPENSE',
     id: '123'
+  });
+});
+
+test('should set up setExpenses object with provided values', () => {
+  const action = setExpenses(expenses);
+
+  expect(action).toEqual({
+    type: 'SET_EXPENSES',
+    expenses
   });
 });

@@ -3,9 +3,18 @@ import thunk from 'redux-thunk';
 
 import database from '../../firebase/firebase';
 import { startAddExpense } from '../../thunks/expenses';
-
+import expenses from '../fixtures/expenses';
 
 const createMockStore = configureMockStore([thunk]);
+
+beforeEach((done) => {
+  const expenseData = {};
+  expenses.forEach(({id, description, amount, note, createdAt}) => {
+    expenseData[id] = {description, note, amount, createdAt};
+  });
+
+  database.ref('expenses').set(expenseData).then(() => done());
+});
 
 test('should add expense to DB and store', () => {
   const store = createMockStore({});
