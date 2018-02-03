@@ -10,6 +10,8 @@ import './styles/styles.css';
 import 'react-dates/lib/css/_datepicker.css';
 //import registerServiceWorker from './registerServiceWorker';
 
+import { startSetExpenses } from './thunks/expenses';
+
 const store = configureStore();
 
 const App = (
@@ -18,5 +20,9 @@ const App = (
   </Provider>
 );
 
-ReactDOM.render(App, document.getElementById('root'));
+ReactDOM.render(<p>Loading..</p>, document.getElementById('root'));
 //registerServiceWorker();
+
+store.dispatch(startSetExpenses()).then(() => {
+  ReactDOM.render(App, document.getElementById('root')); 
+});
