@@ -1,4 +1,4 @@
-import { addExpense, removeExpense, setExpenses } from '../actions/expenses';
+import { addExpense, editExpense, removeExpense, setExpenses } from '../actions/expenses';
 import database from '../firebase/firebase';
 
 export const startAddExpense = (expenseData = {}) => {
@@ -45,6 +45,15 @@ export const startRemoveExpense = ({ id }) => {
     return database.ref(`expenses/${ id }`).remove()
       .then(() => {
         dispatch(removeExpense({ id }));
+      });
+  };
+};
+
+export const startEditExpense = (id, updates) => {
+  return (dispatch) => {
+    return database.ref(`expenses/${ id }`).update(updates)
+      .then(() => {
+        dispatch(editExpense(id, updates));
       });
   };
 };
