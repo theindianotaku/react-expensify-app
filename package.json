@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "firebase": "^4.9.0",
+    "history": "^4.7.2",
     "lodash": "^4.17.4",
     "moment": "^2.19.1",
     "node-sass-chokidar": "^0.0.3",
