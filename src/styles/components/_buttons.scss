@@ -1,0 +1,33 @@
+button {
+  background-color: white;
+  border: 0px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 7px rgba(0,0,0,.05);
+  cursor: pointer;
+  height: 37px;
+  font-size: 15px;
+  line-height: 35px;
+  padding: 0 18px;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.signin-button {
+  margin-top: $s-size;
+}
+
+.signin-button__content {
+
+}
+
+.signin-button__icon {
+  height: 25px;
+  padding-right: 8px;
+  > img {
+    height: 16px;
+    width: auto;
+  }
+}
