@@ -7,8 +7,10 @@ html {
 }
 
 body {
+  color: $dark-grey;
   font-family: 'Open Sans';
   font-size: $m-size;
+  line-height: 1.6;
 }
 
 .container {
