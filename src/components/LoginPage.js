@@ -9,7 +9,7 @@ export const LoginPage = ({ startLogin }) => (
     <div className="box-layout__box">
       <h1 className="box-layout__title">Expense-ify</h1>
       <p>It's time to get your expenses under control.</p>
-      <button className="signin-button valign-wrapper center-align" onClick={startLogin}>
+      <button className="button simple signin-button valign-wrapper center-align" onClick={startLogin}>
         <span className="signin-button__icon valign-wrapper">
           <img alt="google-logo" src={GoogleLogo} />
         </span>

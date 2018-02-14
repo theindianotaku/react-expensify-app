@@ -1,0 +1,13 @@
+.page-header {
+  background: $light-grey;
+  margin-bottom: $l-size;
+  padding: $l-size 0;
+}
+
+.page-header__title {
+  font-size: 2rem;
+}
+
+.page-header__actions {
+  margin-top: $m-size;
+}
