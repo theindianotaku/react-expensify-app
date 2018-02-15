@@ -7,7 +7,7 @@ import ExpenseSummary from './ExpenseSummary';
 class DashboardPage extends Component {
   render() {
     return (
-      <div>
+      <div className="m-b-l">
         <ExpenseSummary />
         <ExpenseListFilter />
         <ExpenseList />
