@@ -2,11 +2,36 @@
 
 exports[`should render AddExpensePage correctly 1`] = `
 <div>
-  <h3>
-    Add Expense
-  </h3>
-  <ExpenseForm
-    onSubmit={[Function]}
-  />
+  <div
+    className="page-header"
+  >
+    <div
+      className="content-container"
+    >
+      <p
+        className="page-header__title"
+      >
+        Add Expense
+      </p>
+      <div
+        className="page-header__actions"
+      >
+        <Link
+          className="button simple valign-wrapper"
+          replace={false}
+          to="/dashboard"
+        >
+          Go back
+        </Link>
+      </div>
+    </div>
+  </div>
+  <div
+    className="content-container m-b-l"
+  >
+    <ExpenseForm
+      onSubmit={[Function]}
+    />
+  </div>
 </div>
 `;

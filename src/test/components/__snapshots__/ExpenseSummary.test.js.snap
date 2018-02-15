@@ -1,35 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should show 1 expense correctly 1`] = `
-<div>
-  <p>
-    Viewing 
-    <strong>
-      1
-    </strong>
-     
-    expense
-     totalling 
-    <strong>
-      $0.94
-    </strong>
-  </p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <p
+      className="page-header__title"
+    >
+      Viewing 
+      <strong>
+        1
+      </strong>
+       
+      expense
+       totalling 
+      <strong>
+        $0.94
+      </strong>
+    </p>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button simple valign-wrapper"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should show multiple expenses correctly 1`] = `
-<div>
-  <p>
-    Viewing 
-    <strong>
-      2
-    </strong>
-     
-    expenses
-     totalling 
-    <strong>
-      $0.94
-    </strong>
-  </p>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <p
+      className="page-header__title"
+    >
+      Viewing 
+      <strong>
+        2
+      </strong>
+       
+      expenses
+       totalling 
+      <strong>
+        $0.94
+      </strong>
+    </p>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button simple valign-wrapper"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;

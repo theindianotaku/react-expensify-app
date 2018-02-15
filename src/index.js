@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
+
 import AppRouter, { history } from './routers/AppRouter';
+import LoadingPage from './components/LoadingPage';
 
 import 'normalize.css/normalize.css';
 import './styles/styles.css';
@@ -29,7 +31,7 @@ const renderApp = () => {
   }
 };
 
-ReactDOM.render(<p>Loading..</p>, document.getElementById('root'));
+ReactDOM.render(<LoadingPage />, document.getElementById('root'));
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {

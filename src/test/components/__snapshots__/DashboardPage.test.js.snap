@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render App component 1`] = `
-<div>
+<div
+  className="m-b-l"
+>
   <Connect(Component) />
   <Connect(ExpenseListFilter) />
   <Connect(Component) />
