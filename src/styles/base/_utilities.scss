@@ -13,3 +13,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.m-b-l {
+  margin-bottom: $l-size !important;
+}
+
+.grey {
+  background-color: $light-grey !important;
+}
+
+.red-text {
+  color: $red !important;
+}

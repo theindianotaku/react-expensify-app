@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { startEditExpense, startRemoveExpense } from '../thunks/expenses';
 import ExpenseForm from './ExpenseForm';
@@ -18,11 +19,21 @@ export class EditExpensePage extends Component {
   render () {
     return (
       <div>
-        <ExpenseForm
-          expense={ this.props.expense }
-          onSubmit={ this.onSubmitHandler }
-        />
-        <button onClick={ this.onClickHandler }>Remove</button>
+        <div className="page-header">
+          <div className="content-container">
+            <p className="page-header__title">Edit Expense</p>
+            <div className="page-header__actions">
+              <Link className="button simple valign-wrapper" to="/dashboard">Go back</Link>
+            </div>
+          </div>
+        </div>
+        <div className="content-container m-b-l">
+          <ExpenseForm
+            expense={ this.props.expense }
+            onSubmit={ this.onSubmitHandler }
+          />
+          <button className="button grey red-text" onClick={ this.onClickHandler }>Remove Expense</button>
+        </div>
       </div>
     );
   }

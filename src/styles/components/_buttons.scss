@@ -23,6 +23,12 @@
     background-color: transparent;
     box-shadow: none;
   }
+
+  &.dark {
+    color: white;
+    background-color: $dark-grey;
+    box-shadow: 0 1px 7px rgba(0,0,0,.05);
+  }
 }
 
 .signin-button {

@@ -1,5 +1,9 @@
 .content-container {
   margin: 0 auto;
-  padding: 0 $m-size;
-  max-width: 80%;
+  padding: 0 $s-size;
+  max-width: 95%;
+  @media (min-width: $desktop-break) {
+    padding: 0 $m-size;
+    max-width: 80%;
+  }
 }
